@@ -1,0 +1,101 @@
+div.index {
+  background-color: #000000;
+
+  div.overlay_bg {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 66.5px);
+
+    div.bg {
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url('https://r4.wallpaperflare.com/wallpaper/844/756/925/rosette-nebula-ngc-2244-galaxy-stars-wallpaper-5b78621f415481e6e7a4088242668407.jpg');
+
+      div.blur {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 90%;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 30%, rgba(255, 255, 255, 0) 100%);
+        z-index: 0;
+
+        div.info {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 110px;
+          text-align: center;
+          z-index: 1;
+
+          p {
+            color: #ffffff;
+            font-weight: 600;
+            font-style: italic;
+            font-size: 60px;
+            text-transform: uppercase;
+          }
+
+          ul {
+            list-style: none;
+            margin-top: 10px;
+
+            li {
+              display: inline-block;
+              font-size: 15px;
+              margin-inline: 20px;
+              color: #b31544;
+              cursor: pointer;
+
+              &:hover {
+                text-decoration: underline;
+                opacity: 0.8;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 510px) {
+  div.index {
+    
+    div.overlay_bg {
+      position: relative;
+      width: 100%;
+      height: calc(100vh - 66.5px);
+  
+      div.bg {
+  
+        div.blur {
+  
+          div.info {
+  
+            p {
+              font-size: 40px;
+            }
+  
+            ul {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              margin-inline: 15px;
+
+              li {
+                font-size: 12px;
+                margin-top: 10px;
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

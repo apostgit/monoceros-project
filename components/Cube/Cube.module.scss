@@ -1,0 +1,8 @@
+div.rellax_square {
+  position: absolute;
+  background: rgb(179, 21, 68);
+  background: linear-gradient(90deg, rgba(179, 21, 68, 1) 44%, rgba(107, 4, 64, 1) 100%);
+  border-radius: 4px;
+  transform: rotate(45deg);
+  z-index: 99;
+}
