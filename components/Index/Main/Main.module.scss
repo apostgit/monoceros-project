@@ -3,14 +3,13 @@ div.main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000000;
   color: #ffffff;
   height: 100vh;
 
   div.inner {
     position: relative;
-    width: 1000px;
-    padding: 20px;
+    // width: 100%;
+    // padding: 20px;
     margin: 0 auto;
 
     p {
@@ -30,11 +29,11 @@ div.main {
   }
 }
 
-@media screen and (max-width: 1310px) {
-  div.main {
+// @media screen and (max-width: 1310px) {
+//   div.main {
 
-    div.grid {
-      width: 98%;
-    }
-  }
-}
+//     div.grid {
+//       width: 98%;
+//     }
+//   }
+// }

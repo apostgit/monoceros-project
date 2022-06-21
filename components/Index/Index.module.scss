@@ -1,6 +1,48 @@
 div.index {
   background-color: #000000;
 
+  div.components {
+    position: relative;
+    display: grid;
+    grid-template-columns: 40px calc(100% - 80px) 40px;
+    width: 1000px;
+    margin: 0 auto;
+
+    div.mobile_buttons {
+      display: none;
+    }
+
+    div.comp {
+      margin-inline: 20px;
+    }
+
+    button {
+      font-size: 20px;
+      background-color: #ffffff;
+      color: #000000;
+      box-shadow: 3px 3px 0 #ffffffc2;
+      border-radius: 1px;
+      border: none;
+      width: 40px;
+      height: 40px;
+      margin: auto;
+      cursor: pointer;
+      transition: 0.2s ease;
+
+      i {
+        font-size: 14px;
+      }
+
+      &:active {
+        box-shadow: 0px 0px 0 #ffffffc2;
+      }
+
+      &:active {
+        transform: scale(0.98);
+      }
+    }
+  }
+
   div.overlay_bg {
     position: relative;
     width: 100%;
@@ -64,24 +106,52 @@ div.index {
   }
 }
 
+@media screen and (max-width: 1010px) {
+  div.index {
+
+    div.components {
+      display: block;
+      width: 95%;
+
+      button {
+        display: none;
+      }
+
+      div.mobile_buttons {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+
+        button.mobile_btn {
+          display: block;
+          padding: 0;
+          margin: 10px;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 510px) {
   div.index {
-    
+
     div.overlay_bg {
       position: relative;
       width: 100%;
       height: calc(100vh - 66.5px);
-  
+
       div.bg {
-  
+
         div.blur {
-  
+
           div.info {
-  
+
             p {
               font-size: 40px;
             }
-  
+
             ul {
               padding-top: 30px;
 

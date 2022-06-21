@@ -1,5 +1,4 @@
 import styles from './Bridge.module.scss'
-import Cube from '../../Cube/Cube'
 
 const Bridge = () => {
   return (
@@ -20,7 +19,6 @@ const Bridge = () => {
           <li>Funding to Schools of Fine Arts</li>
           <li>Sponsoring of exhibitions</li>
         </ul>
-        <Cube width='40px' height='40px' speed='6' left='20' />
         <p>and many many other ideas, for which you can reach us at monoceros@...</p>
       </div>
     </div>

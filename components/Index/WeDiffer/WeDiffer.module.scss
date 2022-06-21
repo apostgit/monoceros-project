@@ -3,14 +3,13 @@ div.we_differ {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000000;
   color: #ffffff;
   height: 100vh;
 
   div.inner {
     position: relative;
-    width: 1000px;
-    padding: 20px;
+    // width: 1000px;
+    // padding: 20px;
     margin: 0 auto;
     z-index: 1;
 
@@ -41,11 +40,11 @@ div.we_differ {
   }
 }
 
-@media screen and (max-width: 1010px) {
-  div.main {
+// @media screen and (max-width: 1010px) {
+//   div.main {
 
-    div.inner {
-      width: 98%;
-    }
-  }
-}
+//     div.inner {
+//       width: 98%;
+//     }
+//   }
+// }
