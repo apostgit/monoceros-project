@@ -2,7 +2,7 @@ import { useState } from 'react'
 import styles from './Header.module.scss'
 
 const Header = () => {
-  const [mobileMenu, setMobileMenu] = useState(true)
+  const [mobileMenu, setMobileMenu] = useState(false)
 
   return (
     <div className={styles.header}>

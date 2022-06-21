@@ -11,7 +11,7 @@ const Main = () => {
         <p>The Monoceros Project is about the future of physical art in a digital world.</p>
         <p>Monoceros aspires to bring physical art up to speed with a world that is
           changing at an interstellar pace.</p>
-        <Cube width='50px' height='50px' speed='2' left='100' />
+        <Cube width='50px' height='50px' speed='2' left='80' />
         <p>We want physical art to continue to exist and adapt accordingly, in an era that seems to be primarily digital. We have no objections against any form of art in any medium, may it that be digital, phygital, “real” or zeros and ones in a metaverse.</p>
         <p>Our “concern” is that physical art does not lag behind and starts to become irrelevant - maybe
           not in the near future, but further down the road. We wish to empower the creators of art -

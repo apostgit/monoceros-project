@@ -5,7 +5,7 @@ const WeDiffer = () => {
   return (
     <div className={styles.we_differ} id='wediffer'>
       <div className={styles.inner}>
-        <p className={styles.header}>Why are we Different</p>
+        <p className={styles.header}>Why we are Different</p>
         <Cube width='70px' height='70px' speed='2' left='0' />
         <p>Our marketplace is different for one simple reason - it features “real” art of quality.</p>
         <p>This statement requires further qualification. We believe in the absolute freedom of art and the expression of artists in any way they see fit, away from “labeling”.</p>
