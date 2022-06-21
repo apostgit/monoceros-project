@@ -19,6 +19,23 @@ div.press {
 
     div.inner {
       width: 100%;
+
+      div.grid_container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  div.press {
+
+    div.inner {
+      width: 100%;
+
+      div.grid_container {
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
   }
 }

@@ -83,14 +83,12 @@ div.index {
             }
   
             ul {
-              display: grid;
-              grid-template-columns: repeat(2, 1fr);
-              margin-inline: 15px;
+              padding-top: 30px;
 
               li {
                 font-size: 12px;
                 margin-top: 10px;
-                margin-right: 0;
+                margin-inline: 5px;
               }
             }
           }
