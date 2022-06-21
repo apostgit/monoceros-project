@@ -1,0 +1,24 @@
+div.press {
+  min-height: 100vh;
+  background-color: #f3f4f9;
+
+  div.inner {
+    width: 700px;
+    padding: 10px;
+    margin: 0 auto;
+
+    div.grid_container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 710px) {
+  div.press {
+
+    div.inner {
+      width: 100%;
+    }
+  }
+}

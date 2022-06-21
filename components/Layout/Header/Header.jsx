@@ -6,7 +6,7 @@ const Header = () => {
 
   return (
     <div className={styles.header}>
-      <div className={styles.logo}>
+      <div className={styles.logo} onClick={() => window.open('/', '_self')}>
         <p>MONOCEROS</p>
         <p>ART</p>
       </div>

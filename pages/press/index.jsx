@@ -1,6 +1,8 @@
-import styles from '../../components/Press/Press.module.scss'
+import styles from '../../components/Press/Index/Press.module.scss'
 import { useEffect, useState } from 'react'
 import { supabase } from '../../utils/supabaseClient'
+import BigPost from '../../components/Press/Index/BigPost/BigPost'
+import Post from '../../components/Press/Index/Post/Post'
 
 const index = () => {
   const [posts, setPosts] = useState()
@@ -24,11 +26,16 @@ const index = () => {
     <div className={styles.press}>
       <div className={styles.inner}>
         {posts &&
-          <div className={styles.big_post} onClick={() => window.open(`/press/${posts[0].id}`, '_self')}>
-            <div className={styles.thumbnail} style={{ backgroundImage: `url(${posts[0].thumbnail})` }}></div>
-            <p className={styles.title}>{posts[0].title}</p>
-            <p className={styles.date}><i className='fa-regular fa-calendar'></i> {new Date(posts[0].created_at).toDateString()}</p>
-          </div>}
+          <BigPost
+            post={posts[0]} />}
+
+        <div className={styles.grid_container}>
+          {posts?.slice(1).map((post, index) => (
+            <Post
+              post={post}
+              key={index} />
+          ))}
+        </div>
       </div>
     </div>
   )

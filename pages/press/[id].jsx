@@ -30,8 +30,11 @@ const id = () => {
         <div className={styles.inner}>
           <div className={styles.thumbnail} style={{ backgroundImage: `url(${post.thumbnail})` }}></div>
           <p className={styles.title}>{post.title}</p>
-          <p className={styles.date}><i className='fa-regular fa-calendar'></i> {new Date(post.created_at).toDateString()}</p>
-
+          <div className={styles.flex_container}>
+            <p className={styles.tag}><i className='fa-solid fa-tags'></i> {post.tag}</p>
+            <p className={styles.date}><i className='fa-regular fa-calendar'></i> {new Date(post.created_at).toDateString()}</p>
+          </div>
+          
           <div className={styles.content}>
             <ReactMarkdown children={post.body} />
           </div>
