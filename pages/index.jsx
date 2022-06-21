@@ -17,13 +17,6 @@ export default function Home() {
           <div className={styles.blur}>
             <div className={styles.info}>
               <p>Welcome to Monoceros</p>
-
-              <ul>
-                <li><a href='#beginning'>Beginning</a></li>
-                <li><a href='#bridge'>NFTs Bridge</a></li>
-                <li><a href='#marketplace'>Monoceros Marketplace</a></li>
-                <li><a href='#wediffer'>We differ</a></li>
-              </ul>
             </div>
           </div>
         </div>

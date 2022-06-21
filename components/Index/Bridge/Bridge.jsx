@@ -3,10 +3,6 @@ import styles from './Bridge.module.scss'
 const Bridge = () => {
   return (
     <div className={styles.bridge} id='bridge'>
-      <div className={styles.bg}>
-        <div className={`${styles.bg_blur} ${styles.top}`}></div>
-        <div className={`${styles.bg_blur} ${styles.bottom}`}></div>
-      </div>
       <div className={styles.inner}>
         <p className={styles.header}>NFTs - The bridge between Physical and Digital</p>
         <p>In our view, in order to achieve that we need to bring physical art up to speed with digital art.</p>

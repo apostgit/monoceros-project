@@ -40,11 +40,18 @@ div.we_differ {
   }
 }
 
-// @media screen and (max-width: 1010px) {
-//   div.main {
+@media screen and (max-width: 1010px) {
+  div.we_differ {
 
-//     div.inner {
-//       width: 98%;
-//     }
-//   }
-// }
+    div.inner {
+
+      p {
+        font-size: 12px;
+        
+        &.header {
+          font-size: 22px;
+        }      
+      }
+    }
+  }
+}

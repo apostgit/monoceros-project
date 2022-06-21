@@ -29,11 +29,18 @@ div.main {
   }
 }
 
-// @media screen and (max-width: 1310px) {
-//   div.main {
+@media screen and (max-width: 1010px) {
+  div.main {
 
-//     div.grid {
-//       width: 98%;
-//     }
-//   }
-// }
+    div.inner {
+
+      p {
+        font-size: 12px;
+        
+        &.header {
+          font-size: 22px;
+        }      
+      }
+    }
+  }
+}

@@ -8,8 +8,6 @@ div.bridge {
 
   div.inner {
     position: relative;
-    // width: 1000px;
-    // padding: 20px;
     margin: 0 auto;
     z-index: 1;
 
@@ -25,9 +23,9 @@ div.bridge {
 
     p {
       font-size: 14px;
-      font-family: 'Lora', serif;
       padding-block: 10px;
-
+      font-family: 'Lora', serif;
+      
       &.header {
         font-family: 'Cera Pro';
         color: #b31544;
@@ -40,11 +38,18 @@ div.bridge {
   }
 }
 
-// @media screen and (max-width: 1010px) {
-//   div.main {
+@media screen and (max-width: 1010px) {
+  div.bridge {
 
-//     div.inner {
-//       width: 98%;
-//     }
-//   }
-// }
+    div.inner {
+
+      p {
+        font-size: 12px;
+        
+        &.header {
+          font-size: 22px;
+        }      
+      }
+    }
+  }
+}
