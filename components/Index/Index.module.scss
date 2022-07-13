@@ -1,52 +1,10 @@
 div.index {
   background-color: #000000;
 
-  div.components {
-    position: relative;
-    display: grid;
-    grid-template-columns: 40px calc(100% - 80px) 40px;
-    width: 1000px;
-    margin: 0 auto;
-
-    div.mobile_buttons {
-      display: none;
-    }
-
-    div.comp {
-      margin-inline: 20px;
-    }
-
-    button {
-      font-size: 20px;
-      background-color: #ffffff;
-      color: #000000;
-      box-shadow: 3px 3px 0 #ffffffc2;
-      border-radius: 1px;
-      border: none;
-      width: 40px;
-      height: 40px;
-      margin: auto;
-      cursor: pointer;
-      transition: 0.2s ease;
-
-      i {
-        font-size: 14px;
-      }
-
-      &:active {
-        box-shadow: 0px 0px 0 #ffffffc2;
-      }
-
-      &:active {
-        transform: scale(0.98);
-      }
-    }
-  }
-
   div.overlay_bg {
     position: relative;
     width: 100%;
-    height: calc(100vh - 66.5px);
+    height: 100vh;
 
     div.bg {
       width: 100%;
@@ -54,7 +12,7 @@ div.index {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      background-image: url('https://r4.wallpaperflare.com/wallpaper/844/756/925/rosette-nebula-ngc-2244-galaxy-stars-wallpaper-5b78621f415481e6e7a4088242668407.jpg');
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/NGC-2237-deography-valentinesday-2018-HaRGB-Rosette-Mosaic.jpg/1599px-NGC-2237-deography-valentinesday-2018-HaRGB-Rosette-Mosaic.jpg?20180215010912');
 
       div.blur {
         position: absolute;
@@ -62,7 +20,7 @@ div.index {
         right: 0;
         bottom: 0;
         width: 100%;
-        height: 90%;
+        height: 100%;
         background: rgb(0, 0, 0);
         background: linear-gradient(0deg, rgba(0, 0, 0, 1) 30%, rgba(255, 255, 255, 0) 100%);
         z-index: 0;
@@ -77,40 +35,31 @@ div.index {
 
           p {
             color: #ffffff;
-            font-weight: 600;
+            font-weight: 500;
             font-style: italic;
-            font-size: 60px;
+            font-size: 20px;
             text-transform: uppercase;
+            width: 80%;
+            margin: 0 auto;
+            line-height: 40px;
           }
-        }
-      }
-    }
-  }
-}
 
-@media screen and (max-width: 1010px) {
-  div.index {
+          button {
+            margin-top: 50px;
+            color: #000000;
+            background-color: #ffffff;
+            border: 0;
+            border-radius: 2px;
+            padding: 10px 15px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.2s ease;
 
-    div.components {
-      display: block;
-      width: 95%;
-
-      button {
-        display: none;
-      }
-
-      div.mobile_buttons {
-        display: flex;
-        align-items: center;
-        position: absolute;
-        bottom: 40px;
-        right: 40px;
-        z-index: 9;
-
-        button.mobile_btn {
-          display: block;
-          padding: 0;
-          margin: 10px;
+            &:active {
+              transform: scale(0.97);
+            }
+          }
         }
       }
     }
@@ -123,7 +72,6 @@ div.index {
     div.overlay_bg {
       position: relative;
       width: 100%;
-      height: calc(100vh - 66.5px);
 
       div.bg {
 
@@ -132,17 +80,8 @@ div.index {
           div.info {
 
             p {
-              font-size: 40px;
-            }
-
-            ul {
-              padding-top: 30px;
-
-              li {
-                font-size: 12px;
-                margin-top: 10px;
-                margin-inline: 5px;
-              }
+              font-size: 18px;
+              line-height: 30px;
             }
           }
         }

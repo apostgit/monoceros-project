@@ -12,7 +12,15 @@ const Header = () => {
       </div>
 
       <div className={styles.nav}>
-        <button className={styles.btn} onClick={() => window.open('/press', '_self')}>
+        <button className={`${styles.btn} ${styles.secondary}`} onClick={() => window.open('/about', '_self')}>
+          The Project
+        </button>
+
+        <button className={`${styles.btn} ${styles.secondary}`} onClick={() => window.open('/ambassadors', '_self')}>
+          Art Ambassadors
+        </button>
+
+        <button className={`${styles.btn} ${styles.secondary}`} onClick={() => window.open('/press', '_self')}>
           Press
         </button>
 
@@ -28,7 +36,19 @@ const Header = () => {
 
         {mobileMenu &&
           <div className={styles.mobile_menu}>
-            <button className={styles.btn} onClick={() => window.open('/press', '_self')}>
+            <button className={`${styles.btn} ${styles.secondary}`} onClick={() => window.open('/', '_self')}>
+              Home
+            </button>
+
+            <button className={`${styles.btn} ${styles.secondary}`} onClick={() => window.open('/about', '_self')}>
+              The Project
+            </button>
+
+            <button className={`${styles.btn} ${styles.secondary}`} onClick={() => window.open('/ambassadors', '_self')}>
+              Art Ambassadors
+            </button>
+
+            <button className={`${styles.btn} ${styles.secondary}`} onClick={() => window.open('/press', '_self')}>
               Press
             </button>
 

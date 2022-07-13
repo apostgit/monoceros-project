@@ -1,0 +1,17 @@
+div.about {
+  background-color: #000000;
+
+  div.components {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  div.about {
+
+    div.components {
+      width: 90%;
+    }
+  }
+}

@@ -36,7 +36,7 @@ div.header {
     border: 0;
     font-weight: 500;
     font-size: 13px;
-    margin-left: 20px;
+    margin-left: 10px;
     cursor: pointer;
     transition: 0.2s ease;
 
@@ -48,11 +48,16 @@ div.header {
       background-color: #b31544;
       color: #ffffff;
       border: 1px solid #b31544;
+      margin-left: 22px;
 
       &:hover {
         border: 1px solid #ffffff;
         box-shadow: 0 0 0 3px #b3154450;
       }
+    }
+
+    &.secondary {
+      padding: 10px;
     }
   }
 }
