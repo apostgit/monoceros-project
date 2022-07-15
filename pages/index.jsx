@@ -9,11 +9,11 @@ export default function Home() {
             <div className={styles.info}>
               <p>
                 Monoceros is one of the 88 official galaxy constellations of the known universe.
-
+                <br />
                 Monoceros is also a project about the future of physical art in a digital world.
-
+                <br />
                 Please read what our Project does and why.
-
+                <br />
                 Then, our Marketplace awaits you for a journey in art - and the future of it.
               </p>
 
