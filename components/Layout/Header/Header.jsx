@@ -24,8 +24,8 @@ const Header = () => {
           Press
         </button>
 
-        <button className={`${styles.btn} ${styles.primary}`} onClick={() => window.open('https://nft.monoceros.art/', '_self')}>
-          Marketplace
+        <button className={`${styles.btn} ${styles.primary}`} onClick={() => window.open('https://platform.monoceros.art/', '_self')}>
+          Platform
         </button>
       </div>
 
