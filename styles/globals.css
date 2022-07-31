@@ -31,10 +31,6 @@ a {
   text-decoration: none;
 }
 
-body.dark {
-  background-color: #0d0f13;
-}
-
 ::placeholder {
   color: #b9bed5;
   opacity: 1;
